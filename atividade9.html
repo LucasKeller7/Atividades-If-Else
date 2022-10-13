@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var inicio, fim, tempo
+        inicio = parseInt(prompt("Digite a hora de início do jogo: "))
+        fim = parseInt(prompt("Digite a hora de encerramento do jogo: "))
+        if (fim > inicio) {
+            tempo = fim - inicio
+        } else {
+            tempo = (24 - inicio) + fim
+        }
+        console.log("O jogo durou " + tempo + " horas.")
+    </script>
+</body>
+</html>
